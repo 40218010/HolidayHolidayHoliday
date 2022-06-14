@@ -15,7 +15,7 @@ class HolidayViewController: UIViewController {
         didSet{
             DispatchQueue.main.async {
                 self.tableView.reloadData()
-                self.navigationItem.title = "\(self.listOfHolidays.count) HOLIDAYS found 👻"
+                self.navigationItem.title = "\(self.listOfHolidays[0].country.name) Holidays 2022 👻"
             }
         }
     }

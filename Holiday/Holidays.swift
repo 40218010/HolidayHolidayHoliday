@@ -17,8 +17,15 @@ struct Holidays: Decodable {
 
 struct HolidayDetail: Decodable {
     var name: String
+    var country: CountryName
     var date: DateInfo
 }
+
+struct CountryName: Decodable {
+    var name: String
+}
+
+//response.holidays[0].country.name
 
 
 struct DateInfo: Decodable {
