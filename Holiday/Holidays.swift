@@ -7,6 +7,16 @@
 
 import Foundation
 
+struct HttpResponseCodes: Decodable {
+    var meta: StatusCode
+}
+
+struct StatusCode: Decodable {
+    var code: Int
+}
+
+//meta.code
+
 struct HolidaysResponse: Decodable {
     var response: Holidays
 }
@@ -17,6 +27,7 @@ struct Holidays: Decodable {
 
 struct HolidayDetail: Decodable {
     var name: String
+    var description: String
     var country: CountryName
     var date: DateInfo
 }

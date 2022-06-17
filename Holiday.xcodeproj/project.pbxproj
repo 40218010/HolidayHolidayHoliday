@@ -17,6 +17,7 @@
 		753E06F0284F41A10085A555 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 753E06EF284F41A10085A555 /* SnapKit */; };
 		753E06F2285331710085A555 /* HolidayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E06F1285331710085A555 /* HolidayRequest.swift */; };
 		753E06F42853483A0085A555 /* HolidayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E06F32853483A0085A555 /* HolidayViewController.swift */; };
+		753E06F628589B730085A555 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E06F528589B730085A555 /* HttpRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +30,10 @@
 		75259D842846087B00D56169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75259D8A284610FB00D56169 /* Holidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holidays.swift; sourceTree = "<group>"; };
 		75259D8C28464A5200D56169 /* HolidayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayCell.swift; sourceTree = "<group>"; };
+		753106652859D63C002762C3 /* NewSwift5Features.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NewSwift5Features.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		753E06F1285331710085A555 /* HolidayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRequest.swift; sourceTree = "<group>"; };
 		753E06F32853483A0085A555 /* HolidayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayViewController.swift; sourceTree = "<group>"; };
+		753E06F528589B730085A555 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 				75259D8C28464A5200D56169 /* HolidayCell.swift */,
 				75259D8A284610FB00D56169 /* Holidays.swift */,
 				753E06F1285331710085A555 /* HolidayRequest.swift */,
+				753E06F528589B730085A555 /* HttpRequest.swift */,
+				753106652859D63C002762C3 /* NewSwift5Features.playground */,
 				75259D7F2846087B00D56169 /* Assets.xcassets */,
 				75259D812846087B00D56169 /* LaunchScreen.storyboard */,
 				75259D842846087B00D56169 /* Info.plist */,
@@ -156,6 +161,7 @@
 			files = (
 				753E06F2285331710085A555 /* HolidayRequest.swift in Sources */,
 				753E06F42853483A0085A555 /* HolidayViewController.swift in Sources */,
+				753E06F628589B730085A555 /* HttpRequest.swift in Sources */,
 				75259D7B2846087800D56169 /* ViewController.swift in Sources */,
 				75259D772846087800D56169 /* AppDelegate.swift in Sources */,
 				75259D8B284610FB00D56169 /* Holidays.swift in Sources */,

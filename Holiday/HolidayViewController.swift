@@ -46,7 +46,6 @@ class HolidayViewController: UIViewController {
     
     func setUpSearchBar() {
         search.searchBar.delegate = self
-        //        search.searchResultsUpdater = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.placeholder = "Type something here to search"
         
@@ -93,26 +92,33 @@ extension HolidayViewController : UITableViewDelegate {
 }
 
 
-extension HolidayViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        
-    }
-    
-}
-
 
 // MARK: UISearchBarDelegate
 extension HolidayViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchBarText = searchBar.text else { return }
-        let holidayRequest = HolidayRequest(countryCode: searchBarText)
-        holidayRequest.getHolidays { [weak self] result in
+        let holidayRequest = HttpRequest(countryCode: searchBarText)
+        holidayRequest.getMethod { [weak self] result in
             switch result {
-            case .failure(let error):
-                print(error)
             case .success(let holidays):
                 self?.listOfHolidays = holidays
+            case .failure(let error):
+                print(error)
             }
         }
+
+        
+
+
+//        let holidayRequest = HolidayRequest(countryCode: searchBarText)
+//        holidayRequest.getHolidays { [weak self] result in
+//            switch result {
+//            case .failure(let error):
+//                print(error)
+//            case .success(let holidays):
+//                self?.listOfHolidays = holidays
+//            }
+//        }
+        
     }
 }

@@ -9,9 +9,9 @@ import UIKit
 import SnapKit
 
 struct Contact {
-    let name:String
-    let jobTitle:String
-    let country:String
+    let name: String
+    let jobTitle: String
+    let country: String
 }
 
 class ContactAPI {

@@ -79,10 +79,5 @@ class HolidayCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    
-    
-    
-    
-    
+
 }
