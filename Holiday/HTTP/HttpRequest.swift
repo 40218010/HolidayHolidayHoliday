@@ -25,8 +25,7 @@ struct HttpRequest {
         let date = Date()
         let format = DateFormatter()
         format.dateFormat = "yyyy"
-        let currentYear = format.string(from: date)
-        
+        let currentYear = format.string(from: date)        
         
         let resourceString = baseUrl + "?api_key=\(API_KEY)&country=\(countryCode)&year=\(currentYear)"
         

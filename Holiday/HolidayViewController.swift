@@ -97,8 +97,8 @@ extension HolidayViewController : UITableViewDelegate {
 extension HolidayViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchBarText = searchBar.text else { return }
-        let holidayRequest = HttpRequest(countryCode: searchBarText)
-        holidayRequest.getMethod { [weak self] result in
+        let holidayRequest = Network(countryCode: searchBarText)
+        holidayRequest.fetchHolidays{ [weak self] result in
             switch result {
             case .success(let holidays):
                 self?.listOfHolidays = holidays
