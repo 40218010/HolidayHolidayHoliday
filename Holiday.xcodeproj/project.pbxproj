@@ -18,7 +18,9 @@
 		753E06F2285331710085A555 /* HolidayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E06F1285331710085A555 /* HolidayRequest.swift */; };
 		753E06F42853483A0085A555 /* HolidayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E06F32853483A0085A555 /* HolidayViewController.swift */; };
 		753E06F628589B730085A555 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E06F528589B730085A555 /* HttpRequest.swift */; };
+		75977C5D2887F1ED00873FB3 /* NetworkFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75977C5C2887F1ED00873FB3 /* NetworkFinal.swift */; };
 		75F8A45F286078BC00870A79 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8A45E286078BC00870A79 /* Network.swift */; };
+		75F8A4622863250700870A79 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8A4612863250700870A79 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,9 @@
 		753E06F1285331710085A555 /* HolidayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRequest.swift; sourceTree = "<group>"; };
 		753E06F32853483A0085A555 /* HolidayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayViewController.swift; sourceTree = "<group>"; };
 		753E06F528589B730085A555 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		75977C5C2887F1ED00873FB3 /* NetworkFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFinal.swift; sourceTree = "<group>"; };
 		75F8A45E286078BC00870A79 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		75F8A4612863250700870A79 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,7 @@
 			children = (
 				75259D762846087800D56169 /* AppDelegate.swift */,
 				75259D782846087800D56169 /* SceneDelegate.swift */,
-				75259D7A2846087800D56169 /* ViewController.swift */,
+				75977C5A2887F0A700873FB3 /* SearchBarwithFiltering */,
 				753E06F32853483A0085A555 /* HolidayViewController.swift */,
 				75259D8C28464A5200D56169 /* HolidayCell.swift */,
 				75259D8A284610FB00D56169 /* Holidays.swift */,
@@ -80,16 +84,34 @@
 				75259D7F2846087B00D56169 /* Assets.xcassets */,
 				75259D812846087B00D56169 /* LaunchScreen.storyboard */,
 				75259D842846087B00D56169 /* Info.plist */,
+				75F8A4612863250700870A79 /* UIImageExtension.swift */,
 			);
 			path = Holiday;
+			sourceTree = "<group>";
+		};
+		75977C5A2887F0A700873FB3 /* SearchBarwithFiltering */ = {
+			isa = PBXGroup;
+			children = (
+				75259D7A2846087800D56169 /* ViewController.swift */,
+			);
+			path = SearchBarwithFiltering;
+			sourceTree = "<group>";
+		};
+		75977C5B2887F18500873FB3 /* CodeRefactoring */ = {
+			isa = PBXGroup;
+			children = (
+				753E06F528589B730085A555 /* HttpRequest.swift */,
+				753E06F1285331710085A555 /* HolidayRequest.swift */,
+			);
+			path = CodeRefactoring;
 			sourceTree = "<group>";
 		};
 		75F8A4602860838100870A79 /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
-				753E06F1285331710085A555 /* HolidayRequest.swift */,
-				753E06F528589B730085A555 /* HttpRequest.swift */,
 				75F8A45E286078BC00870A79 /* Network.swift */,
+				75977C5C2887F1ED00873FB3 /* NetworkFinal.swift */,
+				75977C5B2887F18500873FB3 /* CodeRefactoring */,
 			);
 			path = HTTP;
 			sourceTree = "<group>";
@@ -170,12 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F8A4622863250700870A79 /* UIImageExtension.swift in Sources */,
 				753E06F2285331710085A555 /* HolidayRequest.swift in Sources */,
 				753E06F42853483A0085A555 /* HolidayViewController.swift in Sources */,
 				753E06F628589B730085A555 /* HttpRequest.swift in Sources */,
 				75259D7B2846087800D56169 /* ViewController.swift in Sources */,
 				75259D772846087800D56169 /* AppDelegate.swift in Sources */,
 				75F8A45F286078BC00870A79 /* Network.swift in Sources */,
+				75977C5D2887F1ED00873FB3 /* NetworkFinal.swift in Sources */,
 				75259D8B284610FB00D56169 /* Holidays.swift in Sources */,
 				75259D792846087800D56169 /* SceneDelegate.swift in Sources */,
 				75259D8D28464A5200D56169 /* HolidayCell.swift in Sources */,

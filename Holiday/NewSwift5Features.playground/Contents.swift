@@ -9,12 +9,12 @@ print(greeting)
 let coolNewString = #"the keyword "var" is used to declare a variable"#
 
 let multilineString =
-#"""
+"""
 some cool new features are now avaliable in swift 5
-some things stay the same: \#(coolNewString)
+some things stay the same: \(coolNewString)
 haha
 
-"""#
+"""
 
 // integer multiples
 

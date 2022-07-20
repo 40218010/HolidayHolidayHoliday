@@ -28,6 +28,19 @@ class HolidayCell: UITableViewCell {
         return label
     }()
     
+    let rightButton: UIButton = {
+        let button = UIButton()
+        let config1 = UIImage.SymbolConfiguration(hierarchicalColor: .systemMint)
+//        let config2 = UIImage.SymbolConfiguration(pointSize: 50, weight: .semibold, scale: .small)
+        let image = UIImage(systemName: "airplane.circle", withConfiguration: config1)
+//        let image = UIImage(systemName: "airplane.circle")
+        button.setBackgroundImage(UIImage.systemImage(name: "airplane.circle"), for: .normal)
+        button.contentHorizontalAlignment = .trailing
+        return button
+    }()
+    
+    
+    
 //    lazy var textTwoLabel: UILabel = {
 //        let label = UILabel()
 //        label.text = Array(repeating: "RRRR.", count: 100).joined(separator: ", ")
@@ -52,7 +65,14 @@ class HolidayCell: UITableViewCell {
         let mainVStack = UIStackView(arrangedSubviews: [titleLabel, descriptionLabel])
         mainVStack.axis = .vertical
         contentView.addSubview(mainVStack)
-        mainVStack.snp.makeConstraints { make in
+        
+        let hStack = UIStackView(arrangedSubviews: [mainVStack, rightButton])
+        contentView.addSubview(hStack)
+        rightButton.snp.makeConstraints { make in
+            make.width.height.equalTo(60)
+        }
+        
+        hStack.snp.makeConstraints { make in
             
 //same result
             
@@ -70,6 +90,8 @@ class HolidayCell: UITableViewCell {
 //1
 //            make.edges.equalTo(UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16))
         }
+        
+
         
         
         

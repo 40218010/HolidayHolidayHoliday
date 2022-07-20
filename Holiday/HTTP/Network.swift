@@ -21,10 +21,8 @@ struct Network {
     let API_KEY = "0660c67076ba60fc71500159812cca6afb9d36af"
     
     init(countryCode: String) {
-        let date = Date()
-        let format = DateFormatter()
-        format.dateFormat = "yyyy"
-        let currentYear = format.string(from: date)
+
+        let currentYear = Date().thisYear
         
         var componets = URLComponents()
         componets.scheme = "https"
@@ -83,3 +81,4 @@ struct Network {
     }
     
 }
+

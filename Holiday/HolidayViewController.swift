@@ -45,6 +45,7 @@ class HolidayViewController: UIViewController {
     }
     
     func setUpSearchBar() {
+        navigationItem.searchController = search
         search.searchBar.delegate = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.placeholder = "Type something here to search"
@@ -57,7 +58,6 @@ class HolidayViewController: UIViewController {
     func setUpTableView() {
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.tableHeaderView = search.searchBar
     }
     
     func setUpView() {
